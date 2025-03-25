@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Themed Website</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            overflow: hidden;
+            position: relative;
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+        .heart {
+            font-size: 3rem;
+            position: absolute;
+            animation: heartbeat 1.5s infinite, float 5s infinite alternate;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+        .message {
+            font-size: 2rem;
+            font-weight: bold;
+            position: relative;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .typewriter span {
+            border-right: 2px solid white;
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            animation: typing 8s steps(80, end) infinite alternate, blink 0.7s infinite;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+    </style>
+</head>
+<body>
+    <div class="heart" style="top: 10%; left: 20%;">❤️</div>
+    <div class="heart" style="top: 20%; left: 70%;">💖</div>
+    <div class="heart" style="top: 50%; left: 40%;">💕</div>
+    <div class="heart" style="top: 70%; left: 80%;">💞</div>
+    <div class="heart" style="top: 80%; left: 30%;">💗</div>
+    <div class="container">
+        <div class="message typewriter">
+            <span>I love you forever Sakshi❤️❤️ and always... now you can see my love</span>
+        </div>
+    </div>
+</body>
+</html>
